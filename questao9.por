@@ -3,6 +3,17 @@ programa
 	
 	funcao inicio()
 	{
+		caracter Escolhido
+
+		escreva("Qual a letra escolhida? ")
+		leia(Escolhido)
+
+		se(Escolhido == "a" ou Escolhido = "e" ou Escolhido = "i" ou Escolhido = "o" ou Escolhido = "u"){
+			escreva("É vogal!")
+		}senao{
+			escreva("É consoante! \n\n")
+		}
+
 		inteiro Ano
 		escreva("Qual o ano? ")
 		leia(Ano)
