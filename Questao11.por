@@ -3,13 +3,17 @@ programa
 	
 	funcao inicio()
 	{
-		real Nota
-		escreva("Qual a nota do aluno? ")
-		leia(Nota)
+		real Nota1, Nota2, Media
+		escreva("Qual a nota 1 do aluno? ")
+		leia(Nota1)
+		escreva("Qual a nota 2 do aluno? ")
+		leia(Nota2)
 
-		se(Nota == 10){
+		Media = (Nota1 + Nota2) / 2
+
+		se(Media == 10){
 			escreva("Aprovado com distinção!")
-		}senao se(Nota >= 7){
+		}senao se(Media >= 7){
 			escreva("Aprovado!")
 		}senao{
 			escreva("Reprovado!")
